@@ -4,7 +4,7 @@ app=Flask(__name__)
 
 @app.route('/')
 def index():
-    text = "HALO HALO" 
+    text = text = open('dane/xd.txt').read() 
     return render_template("index.html", text=text)
 
 @app.route('/xd')
